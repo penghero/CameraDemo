@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745933E7200C26F900E6820D /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745933E6200C26F900E6820D /* UserDefault.swift */; };
 		74683BBA2005DFAD002398C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74683BB92005DFAD002398C0 /* AppDelegate.swift */; };
 		74683BBC2005DFAD002398C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74683BBB2005DFAD002398C0 /* ViewController.swift */; };
 		74683BBF2005DFAD002398C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74683BBD2005DFAD002398C0 /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		74683BC42005DFAD002398C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74683BC22005DFAD002398C0 /* LaunchScreen.storyboard */; };
 		74683BCF2005DFAD002398C0 /* CameraDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74683BCE2005DFAD002398C0 /* CameraDemoTests.swift */; };
 		74683BDA2005DFAD002398C0 /* CameraDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74683BD92005DFAD002398C0 /* CameraDemoUITests.swift */; };
+		74683BE92005F37E002398C0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74683BE72005F37E002398C0 /* CameraViewController.swift */; };
+		748FC27F20073C270050467E /* ARVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FC27E20073C270050467E /* ARVideoKit.framework */; };
+		748FC281200742060050467E /* ARVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 748FC27E20073C270050467E /* ARVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		748FC28A2008420E0050467E /* DetailedModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FC2892008420E0050467E /* DetailedModelController.swift */; };
+		748FC28F200884B00050467E /* CommonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FC28D200884B00050467E /* CommonCollectionViewCell.swift */; };
+		748FC290200884B00050467E /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 748FC28E200884B00050467E /* CommonCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		748FC282200742060050467E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				748FC281200742060050467E /* ARVideoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		745933E6200C26F900E6820D /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		74683BB62005DFAD002398C0 /* CameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74683BB92005DFAD002398C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74683BBB2005DFAD002398C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +69,11 @@
 		74683BD52005DFAD002398C0 /* CameraDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74683BD92005DFAD002398C0 /* CameraDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDemoUITests.swift; sourceTree = "<group>"; };
 		74683BDB2005DFAD002398C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74683BE72005F37E002398C0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		748FC27E20073C270050467E /* ARVideoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARVideoKit.framework; sourceTree = "<group>"; };
+		748FC2892008420E0050467E /* DetailedModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedModelController.swift; sourceTree = "<group>"; };
+		748FC28D200884B00050467E /* CommonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCollectionViewCell.swift; sourceTree = "<group>"; };
+		748FC28E200884B00050467E /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748FC27F20073C270050467E /* ARVideoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +125,14 @@
 		74683BB82005DFAD002398C0 /* CameraDemo */ = {
 			isa = PBXGroup;
 			children = (
+				748FC27E20073C270050467E /* ARVideoKit.framework */,
 				74683BB92005DFAD002398C0 /* AppDelegate.swift */,
 				74683BBB2005DFAD002398C0 /* ViewController.swift */,
+				745933E6200C26F900E6820D /* UserDefault.swift */,
+				748FC2892008420E0050467E /* DetailedModelController.swift */,
+				74683BE72005F37E002398C0 /* CameraViewController.swift */,
+				748FC28D200884B00050467E /* CommonCollectionViewCell.swift */,
+				748FC28E200884B00050467E /* CommonCollectionViewCell.xib */,
 				74683BBD2005DFAD002398C0 /* Main.storyboard */,
 				74683BC02005DFAD002398C0 /* Assets.xcassets */,
 				74683BC22005DFAD002398C0 /* LaunchScreen.storyboard */,
@@ -135,6 +169,7 @@
 				74683BB22005DFAD002398C0 /* Sources */,
 				74683BB32005DFAD002398C0 /* Frameworks */,
 				74683BB42005DFAD002398C0 /* Resources */,
+				748FC282200742060050467E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +269,7 @@
 			files = (
 				74683BC42005DFAD002398C0 /* LaunchScreen.storyboard in Resources */,
 				74683BC12005DFAD002398C0 /* Assets.xcassets in Resources */,
+				748FC290200884B00050467E /* CommonCollectionViewCell.xib in Resources */,
 				74683BBF2005DFAD002398C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				74683BBC2005DFAD002398C0 /* ViewController.swift in Sources */,
+				748FC28A2008420E0050467E /* DetailedModelController.swift in Sources */,
+				745933E7200C26F900E6820D /* UserDefault.swift in Sources */,
 				74683BBA2005DFAD002398C0 /* AppDelegate.swift in Sources */,
+				74683BE92005F37E002398C0 /* CameraViewController.swift in Sources */,
+				748FC28F200884B00050467E /* CommonCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +467,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2R4253LC5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CameraDemo",
+				);
 				INFOPLIST_FILE = CameraDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.penggege.CameraDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sytz.penggege.CameraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,9 +486,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2R4253LC5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CameraDemo",
+				);
 				INFOPLIST_FILE = CameraDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.penggege.CameraDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sytz.penggege.CameraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

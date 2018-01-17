@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CommonCollectionViewCell" customModule="CameraDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PhP-Ge-Mhc">
+                        <rect key="frame" x="0.0" y="0.0" width="136" height="115"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="136" id="dhP-IC-hBu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMU-7v-eZV">
+                        <rect key="frame" x="0.0" y="42.5" width="136" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="oe4-ns-vqI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2X-9f-q2F">
+                        <rect key="frame" x="43" y="32" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="mBR-oM-eMF"/>
+                            <constraint firstAttribute="height" constant="50" id="oHV-L0-taa"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="iw_playIcon"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PhP-Ge-Mhc" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="0KW-28-kcp"/>
+                <constraint firstItem="tMU-7v-eZV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2be-C7-JXb"/>
+                <constraint firstAttribute="trailing" secondItem="PhP-Ge-Mhc" secondAttribute="trailing" id="59z-P1-M7s"/>
+                <constraint firstItem="tMU-7v-eZV" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Kh4-zV-mBm"/>
+                <constraint firstAttribute="bottom" secondItem="PhP-Ge-Mhc" secondAttribute="bottom" id="R9H-9s-ZxJ"/>
+                <constraint firstItem="L2X-9f-q2F" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eS1-8t-pDq"/>
+                <constraint firstItem="tMU-7v-eZV" firstAttribute="width" secondItem="PhP-Ge-Mhc" secondAttribute="width" id="gVn-kC-gK8"/>
+                <constraint firstItem="PhP-Ge-Mhc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tUe-OK-PUM"/>
+                <constraint firstItem="PhP-Ge-Mhc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vCn-QD-87t"/>
+                <constraint firstItem="PhP-Ge-Mhc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vH2-kh-X6N"/>
+                <constraint firstItem="L2X-9f-q2F" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="yVG-SF-kod"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="136" height="115"/>
+            <connections>
+                <outlet property="cellImage" destination="PhP-Ge-Mhc" id="BeD-LX-fuh"/>
+                <outlet property="cellLabel" destination="tMU-7v-eZV" id="Ku3-cx-cG3"/>
+                <outlet property="playBtn" destination="L2X-9f-q2F" id="rdX-de-tfJ"/>
+            </connections>
+            <point key="canvasLocation" x="-6" y="141.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iw_playIcon" width="132" height="132"/>
+    </resources>
+</document>
