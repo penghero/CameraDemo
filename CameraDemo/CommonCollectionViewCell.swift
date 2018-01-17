@@ -4,7 +4,7 @@
 //
 //  Created by 陈鹏 on 2018/1/12.
 //  Copyright © 2018年 penggege.CP. All rights reserved.
-//
+//https://github.com/penghero/CameraDemo.git
 
 import UIKit
 
