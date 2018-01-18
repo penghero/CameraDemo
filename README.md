@@ -2,6 +2,13 @@
 Swift版的相机 由于项目需要 初学swift 请多关照
 ## 需真机调试
 https://github.com/penghero/CameraDemo.git
+由于需访问相册 相机 麦克 需在项目info.plist中添加如下键值对
+```
+Privacy - Photo Library Additions Usage Description //App需要您的同意,才能访问相册
+Privacy - Photo Library Usage Description//App需要您的同意,才能访问相册
+Privacy - Camera Usage Description//App需要您的同意,才能访问相机
+Privacy - Microphone Usage Description//App需要您的同意,才能访问麦克风
+```
 # 演示GIF
 ![image](https://github.com/penghero/CameraDemo/blob/master/gif/Untitle2.gif)
 # 概要
